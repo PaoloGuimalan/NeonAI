@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'NeonCal';
+    src: url('../../resources/fonts/Android101-El3e.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#div_home{
+    background-color: black;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /* max-width: 700px; */
+    /* max-height: 500px; */
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* overflow: hidden; */
+}
+
+#div_neon_interface{
+    background-color: transparent;
+    width: 90%;
+    height: 90%;
+    max-width: 210px;
+    max-height: 210px;
+    border-radius: 210px;
+    border: solid 3px transparent;
+    box-shadow: 0px 0px 30px transparent, inset 0px 0px 70px transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#div_inner_neon{
+    background-color: transparent;
+    width: 95%;
+    height: 95%;
+    max-width: 180px;
+    max-height: 180px;
+    border-radius: 180px;
+    border-top: solid 5px transparent;
+    border-left: solid 5px transparent;
+    border-right: solid 5px transparent;
+    border-bottom: solid 5px transparent;
+    border-right-style: dashed;
+    border-bottom-style: dashed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: -10px 0px 30px cyan, inset 7px 7px 15px cyan; */
+}
+
+#div_inner2_neon{
+    background-color: transparent;
+    width: 95%;
+    height: 95%;
+    max-width: 155px;
+    max-height: 155px;
+    border-radius: 155px;
+    border-top: solid 5px cyan;
+    border-left: solid 5px cyan;
+    border-right: solid 5px cyan;
+    border-bottom: solid 5px cyan;
+    border-top-style: dashed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: -10px 0px 30px cyan, inset 7px 7px 15px cyan; */
+}
+
+#div_neon_stable_inner{
+    background-color: transparent;
+    width: 95%;
+    height: 95%;
+    max-width: 130px;
+    max-height: 130px;
+    border-radius: 130px;
+    border-top: solid 0px cyan;
+    border-left: solid 0px cyan;
+    border-right: solid 0px cyan;
+    border-bottom: solid 0px cyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: cyan;
+    /* border-style: dashed; */
+}
+
+#p_label_neon{
+    color: grey;
+    position: absolute;
+    font-size: 20px;
+    font-family: NeonCal;
+    text-shadow: 0px 0px 10px transparent;
+    cursor: pointer;
+}
+
+#p_label_neon::selection {
+    color: none;
+    background: none;
+}
+/* For Mozilla Firefox */
+#p_label_neon::-moz-selection {
+    color: none;
+    background: none;
+}
+
+#div_speaking_anim{
+    background-color: transparent;
+    width: 100%;
+    height: 90%;
+    max-width: 300px;
+    max-height: 100px;
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.div_loader{
+    width: 5px;
+    height: 90%;
+    max-height: 0px;
+    background-color: grey;
+    border-radius: 0px;
+    box-shadow: 0px 0px 10px transparent;
+}

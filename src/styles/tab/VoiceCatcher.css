@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'NeonStandard';
+    src: url('../../resources/fonts/neonstandard3.eot?#iefix') format('embedded-opentype'),
+         url('../../resources/fonts/neonstandard3.eot'),
+         url('../../resources/fonts/neonstandard3.woff') format('woff'), 
+         url('../../resources/fonts/neonstandard3.ttf')  format('truetype'),
+         url('../../resources/fonts/neonstandard3.svg#svgFontName') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* @font-face {
+    font-family: 'NeonStandard';
+    src: url('../../resources/fonts/neonstandard3.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+@font-face {
+    font-family: 'NeonCal';
+    src: url('../../resources/fonts/Android101-El3e.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#div_voicecatcher{
+    background-color: transparent;
+    width: 95%;
+    max-width: 300px;
+    height: 2px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 5px;
+    border-top: solid 1px grey;
+    border-bottom: solid 1px grey;
+    border-right: solid 0px grey;
+    border-left: solid 0px grey;
+    /* transform: perspective(500px) rotateY(0deg); */
+    color: transparent;
+    text-shadow: 0px 0px 10px transparent;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    overflow-y: auto;
+    /* box-shadow: 0px -2px 10px cyan; */
+}
+
+#div_voicecatcher::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+#div_voicecatcher::-webkit-scrollbar-track {
+  background: transparent; 
+}
+ 
+/* Handle */
+#div_voicecatcher::-webkit-scrollbar-thumb {
+  background: black; 
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+#div_voicecatcher::-webkit-scrollbar-thumb:hover {
+  background: cyan;
+}
+
+#div_text_container{
+  display: flex;
+  overflow-y: scroll;
+}
+
+#div_text_container::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  /* Track */
+  #div_text_container::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+   
+  /* Handle */
+  #div_text_container::-webkit-scrollbar-thumb {
+    background: black; 
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  #div_text_container::-webkit-scrollbar-thumb:hover {
+    background: cyan;
+  }
+
+#div_text_container{
+    display: flex;
+    overflow-y: scroll;
+    flex-direction: column;
+}
+
+
+
+#p_text{
+    margin: 2px;
+    text-align: justify;
+    font-size: 20px;
+    font-family: NeonStandard;
+    /* text-shadow: 0px 0px 10px cyan; */
+}
+
+#p_label_voice_transmit{
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-family: NeonCal;
+    /* text-shadow: 0px 0px 10px cyan; */
+}
+
+#textarea_voicetransmit{
+  width: 95%;
+  height: 300px;
+  border: none;
+  background-color: transparent;
+  color: cyan;
+  font-size: 20px;
+  font-family: NeonStandard;
+  outline: none;
+}
+
+#btn_voicetransmit_process{
+  margin-top: 10px;
+  background-color: cyan;
+  width: 100px;
+  height: 35px;
+  font-size: 20px;
+  font-family: NeonStandard;
+  cursor: pointer;
+}

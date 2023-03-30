@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'NeonStandard';
+    src: url('../../resources/fonts/neonstandard3.eot?#iefix') format('embedded-opentype'),
+         url('../../resources/fonts/neonstandard3.eot'),
+         url('../../resources/fonts/neonstandard3.woff') format('woff'), 
+         url('../../resources/fonts/neonstandard3.ttf')  format('truetype'),
+         url('../../resources/fonts/neonstandard3.svg#svgFontName') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* @font-face {
+    font-family: 'NeonStandard';
+    src: url('../../resources/fonts/neonstandard3.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+@font-face {
+    font-family: 'NeonCal';
+    src: url('../../resources/fonts/Android101-El3e.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#div_musicplayer{
+    background-color: transparent;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 95%;
+    height: 2px;
+    max-width: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    overflow-y: auto;
+    color: cyan;
+    text-shadow: 0px 0px 10px cyan;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border-top: solid 1px grey;
+    border-bottom: solid 1px grey;
+    border-right: solid 0px grey;
+    border-left: solid 0px grey;
+}
+
+#p_label_voice_transmit{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-family: NeonCal;
+    /* text-shadow: 0px 0px 10px cyan; */
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: black; 
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: cyan;
+  }
+
+#div_musicInterface{
+    padding-top: 10px;
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#div_spinner{
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#div_spinner_anim{
+    background-color: transparent;
+    border: solid 2px cyan;;
+    width: 90%;
+    height: 90%;
+    border-radius: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px cyan;
+}
+
+#div_spinner_whole{
+    background-color: transparent;
+    width: 10px;
+    height: 10px;
+    border-radius: 20px;
+    border: solid 10px cyan;
+    border-top-style: dashed;
+    border-bottom-style: dashed;
+    box-shadow: 0px 0px 10px cyan;
+}
+
+#div_music_info{
+    background-color: transparent;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    font-family: NeonStandard;
+    font-size: 25px;
+}
+
+#div_duration{
+    background-color: transparent;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+}
+
+#duration_counter_container{
+    background-color: transparent;
+    display: flex;
+    flex: 1;
+    height: 10px;
+    border-radius: 0px;
+    border-left: solid 2px cyan;
+    border-right: solid 2px cyan;
+}
+
+#div_duration_counter{
+    background-color: cyan;
+    height: 100%;
+    /* width: 50%; */
+    box-shadow: 0px 0px 10px cyan;
+}
+
+.p_durations{
+    font-size: 13px;
+}
